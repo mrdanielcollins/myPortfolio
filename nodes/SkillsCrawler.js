@@ -11,24 +11,27 @@ var page = {
 };
 
 //request page and get all the urls
-request(url, function (err, resp, body) {
+function getPageURL() {
+    request(url, function (err, resp, body) {
 
-    //load body of the page
-    $ = cheerio.load(body);
+        //load body of the page
+        $ = cheerio.load(body);
 
-    //jquery get all hyperlinks
-    links = $('a');
-    $(links).each(function (i, link) {
+        //jquery get all hyperlinks
+        links = $('a');
 
-        //Write each link as a text
-        console.log('***************************')
-        console.log($(link).attr('href'));
+        $(links).each(function (i, link) {
 
-        //Open links page
+            //Write each link as a text
+            console.log('***************************')
+            console.log($(link).attr('href'));
+            console.log(i);
 
+            //Open links page 
+        });
 
-        
     });
+}
 
+getPageURL();
 
-});
