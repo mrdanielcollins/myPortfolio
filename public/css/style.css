@@ -1,3 +1,45 @@
 body {
-    background-color: cyan;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
 }
+
+p{
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h1{
+    font-size: 35px;
+}
+
+#Bio-Container{
+    background-color: white;
+    padding: 10px;
+}
+
+#First-Row{
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+#Skills-Container{
+    background-color: lightblue;
+    float: left;
+}
+
+#Experience-Container{
+    background-color: lightcoral;
+    float: left;
+}
+
+.Box{
+    width: 400px;
+    height: 300px;
+}
+
+div.Box :hover{
+    background-color:steelblue;
+}
+
