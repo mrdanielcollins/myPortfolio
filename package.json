@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mrdanielcollins/myPortfolio#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "hashtable": "^2.0.2"
   }
 }
